@@ -12,7 +12,7 @@ scoring:
   defaultGroup: default
 
 assignments:
-- group:    00-setup
+- title:    00-setup
   start:    05-09-2026 12:00
   deadline: 24-10-2026 23:59
   tasks:
