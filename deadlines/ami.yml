@@ -1,3 +1,17 @@
+scoring:
+  policies:
+  - name: week
+    kind: linear
+    spec:
+      after: 168h
+      multiplier: 0
+  groups:
+  - name: default
+    weight: 10.0
+    policy: week
+  defaultGroup: default
+
+assignments:
 - group:    00-setup
   start:    05-09-2026 12:00
   start:    24-10-2026 23:59
