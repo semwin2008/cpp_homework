@@ -2,12 +2,13 @@
 
 Общая формула оценки:
 
-![encoding](https://latex.codecogs.com/svg.image?0.275%20H%20+%200.625%20P%20+%200.1S)
+![encoding](https://latex.codecogs.com/svg.image?0.2%20H%20+%200.4%20P%20+%200.1S+%200.3E)
 
 где
 - ![encoding](https://latex.codecogs.com/svg.image?H) - оценка за домашние задания
 - ![encoding](https://latex.codecogs.com/svg.image?P) - оценка за проект
 - ![encoding](https://latex.codecogs.com/svg.image?S) - оценка за работу на семинаре
+- ![encoding](https://latex.codecogs.com/svg.image?E) - оценка за экзамен
 
 Итоговая оценка округляется до ближайшего целого с помощью функции `std::round`.
 
