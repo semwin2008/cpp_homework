@@ -14,7 +14,7 @@ scoring:
 assignments:
 - group:    00-setup
   start:    05-09-2026 12:00
-  start:    24-10-2026 23:59
+  deadline: 24-10-2026 23:59
   tasks:
     - task: multiplication
       score: 100
