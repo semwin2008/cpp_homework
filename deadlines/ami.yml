@@ -20,7 +20,7 @@ assignments:
       score: 100
 
 - group: 01-numbers
-  start:    20-09-2026 09:00
+  start:    20-09-2026 01:00
   deadline: 03-10-2026 23:59
   tasks:
     - task: palindrome
