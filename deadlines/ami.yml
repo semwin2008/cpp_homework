@@ -18,3 +18,20 @@ assignments:
   tasks:
     - task: multiplication
       score: 100
+
+- group: 01-numbers
+  start:    20-09-2026 09:00
+  deadline: 03-10-2026 23:59
+  tasks:
+    - task: palindrome
+      score: 100
+    - task: password
+      score: 100
+    - task: varint
+      score: 200
+    - task: bitops
+      score: 200
+    - task: safe_arithmetic
+      score: 200
+    - task: fp16
+      score: 400
