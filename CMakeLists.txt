@@ -21,18 +21,18 @@ add_subdirectory(tasks/multiplication)
 
 
 # 1
-#add_subdirectory(tasks/next_even)
-#add_subdirectory(tasks/is_leap)
-#add_subdirectory(tasks/chocolate)
-#add_subdirectory(tasks/min_divisor)
-#add_subdirectory(tasks/fibonacci)
-#add_subdirectory(tasks/reduce_fraction)
-#add_subdirectory(tasks/palindrome)
-#add_subdirectory(tasks/password)
-#add_subdirectory(tasks/varint)
-#add_subdirectory(tasks/bitops)
-#add_subdirectory(tasks/safe_arithmetic)
-#add_subdirectory(tasks/fp16)
+# add_subdirectory(tasks/next_even)
+# add_subdirectory(tasks/is_leap)
+# add_subdirectory(tasks/chocolate)
+# add_subdirectory(tasks/min_divisor)
+# add_subdirectory(tasks/fibonacci)
+# add_subdirectory(tasks/reduce_fraction)
+add_subdirectory(tasks/palindrome)
+add_subdirectory(tasks/password)
+add_subdirectory(tasks/varint)
+add_subdirectory(tasks/bitops)
+add_subdirectory(tasks/safe_arithmetic)
+add_subdirectory(tasks/fp16)
 
 
 # 2
