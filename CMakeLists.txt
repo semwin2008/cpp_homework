@@ -36,12 +36,13 @@ add_subdirectory(tasks/fp16)
 
 
 # 2
-#add_subdirectory(tasks/interpreter)
 #add_subdirectory(tasks/sort_students)
 #add_subdirectory(tasks/tests_checking)
-#add_subdirectory(tasks/admission)
-#add_subdirectory(tasks/scorer)
-#add_subdirectory(tasks/unixpath)
+add_subdirectory(tasks/admission)
+add_subdirectory(tasks/provinces)
+add_subdirectory(tasks/scorer)
+add_subdirectory(tasks/unixpath)
+add_subdirectory(tasks/interpreter)
 
 
 # 3
