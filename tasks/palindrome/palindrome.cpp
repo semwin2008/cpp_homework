@@ -1,10 +1,11 @@
 #include "palindrome.h"
 
 bool IsPalindrome(const std::string& str) {
-    size_t left = -1, right = str.size();
+    size_t left = -1;
+    size_t right = str.size();
     while (right - left > 1) {
         // moving left bound to next non-space symbol
-        left--;
+        left++;
         while (left < right && str[left] == ' ') {
             left++;
         }
@@ -15,7 +16,7 @@ bool IsPalindrome(const std::string& str) {
         }
         // if read all the string
         if (left >= right) {
-            break
+            break;
         }
         // found mismatch
         if (str[left] != str[right]) {
