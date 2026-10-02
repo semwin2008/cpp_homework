@@ -96,6 +96,7 @@ uint32_t CountLeadingZeros(uint64_t value) {
 }
 
 uint64_t RotateLeft(uint64_t value, uint32_t shift) {
+    shift %= Bits;
     uint64_t result = value << shift;
     uint8_t rem = Bits - shift;
     result |= value >> rem;
@@ -103,6 +104,7 @@ uint64_t RotateLeft(uint64_t value, uint32_t shift) {
 }
 
 uint64_t RotateRight(uint64_t value, uint32_t shift) {
+    shift %= Bits;
     uint64_t result = value >> shift;
     uint8_t rem = Bits - shift;
     result |= value << rem;
