@@ -93,6 +93,9 @@ uint64_t RotateLeft(uint64_t value, uint32_t shift) {
     shift %= Bits;
     uint64_t result = value << shift;
     uint8_t rem = Bits - shift;
+    if (rem == Bits) {
+        rem = 0;
+    }
     result |= value >> rem;
     return result;
 }
@@ -101,6 +104,9 @@ uint64_t RotateRight(uint64_t value, uint32_t shift) {
     shift %= Bits;
     uint64_t result = value >> shift;
     uint8_t rem = Bits - shift;
+    if (rem == Bits) {
+        rem = 0;
+    }
     result |= value << rem;
     return result;
 }
