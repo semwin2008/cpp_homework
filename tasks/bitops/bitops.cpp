@@ -38,10 +38,7 @@ uint64_t SetBits(uint64_t value, uint64_t offset, uint64_t count, uint64_t bits)
     uint64_t result = value;
     // creating mask of changing bits
     uint64_t mask = BitMask >> offset << offset;
-    int64_t rem = Bits - count - offset;
-    if (rem < 0) {
-        rem = 0;
-    }
+    uint64_t rem = Bits - count - offset;
     mask = mask << rem >> rem;
     // changing bits
     result &= ~mask;
@@ -54,10 +51,7 @@ uint64_t SetBits(uint64_t value, uint64_t offset, uint64_t count, uint64_t bits)
 uint64_t ExtractBits(uint64_t value, uint64_t offset, uint64_t count) {
     // creating mask of changing bits
     uint64_t mask = BitMask >> offset << offset;
-    int64_t rem = Bits - count - offset;
-    if (rem < 0) {
-        rem = 0;
-    }
+    uint64_t rem = Bits - count - offset;
     mask = mask << rem >> rem;
     // changing bits
     value &= mask;
