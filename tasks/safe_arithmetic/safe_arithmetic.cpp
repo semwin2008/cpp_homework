@@ -6,7 +6,7 @@ bool SafeAdd(int64_t a, int64_t b, int64_t& result) {
     uint64_t ua = a;
     uint64_t ub = b;
     // calculating singed summ without UB danger
-    int64_t sum = ua + ub;
+    int64_t sum = static_cast<int64_t>(ua + ub);
     if (b < 0 && sum > a) {
         return false;
     }
@@ -21,7 +21,7 @@ bool SafeSubtract(int64_t a, int64_t b, int64_t& result) {
     uint64_t ua = a;
     uint64_t ub = b;
     // calculating singed summ without UB danger
-    int64_t sub = ua - ub;
+    int64_t sub = static_cast<int64_t>(ua - ub);
     if (b >= 0 && sub > a) {
         return false;
     }
@@ -69,7 +69,7 @@ bool SafeMultiply(int64_t a, int64_t b, int64_t& result) {
     int64_t mid_res = 0;
     for (int i = 0; i < Bits - 1; ++i) {
         // single bit of b
-        int64_t new_b = b & (1ull << i);
+        int64_t new_b = b & (1ll << i);
         // checking if a * new_b overflows;
         if (new_b) {
             if ((a << i >> i) != a) {
