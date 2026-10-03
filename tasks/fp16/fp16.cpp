@@ -4,9 +4,6 @@
 constexpr uint8_t Bits16 = 16;
 constexpr uint8_t Exp16 = 5;
 constexpr uint8_t Man16 = 10;
-constexpr uint8_t Bits32 = 32;
-constexpr uint8_t Exp32 = 8;
-constexpr uint8_t Man32 = 23;
 constexpr uint8_t Exp16Bias = 15;
 constexpr float ManNorm = 1024.0f;
 
