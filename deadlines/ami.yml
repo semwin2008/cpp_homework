@@ -50,3 +50,10 @@ assignments:
       score: 100
     - task: interpreter
       score: 200
+
+- title: 99-project
+  start:    03-10-2026 12:00
+  deadline: 24-10-2026 23:59
+  tasks:
+    - task: image_processor
+      score: 1000
