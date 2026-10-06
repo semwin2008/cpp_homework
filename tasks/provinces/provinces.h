@@ -1,4 +1,5 @@
-#include <cstdint>
+#include <set>
 #include <vector>
+#include <cstdint>
 
-std::int64_t CountPassports(const std::vector<int>& provinces);
+int64_t CountPassports(const std::vector<int>& provinces);

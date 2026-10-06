@@ -62,4 +62,4 @@ add_subdirectory(tasks/interpreter)
 #add_subdirectory(tasks/game_of_life)
 
 # project
-#add_subdirectory(tasks/image_processor)
+add_subdirectory(tasks/image_processor)
