@@ -1,6 +1,6 @@
 #pragma once
 
-#include "args/args.h"
+#include "utils/args/inputArgs.h"
 
 
-Args parse(const int argc, const char** argv);
+InputArgs parse(const int argc, const char** argv);
