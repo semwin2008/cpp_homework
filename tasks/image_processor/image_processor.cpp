@@ -7,9 +7,9 @@
 
 int main(int argc, char** argv) {
     InputArgs input_args = parse(argc, argv);
-    Pipeline pipeline(input_args.getFilterArgs());
-    Image image = BMP::read(input_args.getInputFilePath());
+    Pipeline pipeline(input_args.filter_args);
+    Image image = BMP::read(input_args.input_file_path);
     Image edited_image = pipeline.apply(image);
-    BMP::write(input_args.getOutputFilePath(), edited_image);
+    BMP::write(input_args.output_file_path, edited_image);
     return 0;
 }
