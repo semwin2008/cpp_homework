@@ -1,7 +1,8 @@
 #pragma once
 
-#include "utils/args/filterArgs.h"
+#include "/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/args/filterArgs.h"
 #include <string>
+#include <vector>
 
 
 struct InputArgs{

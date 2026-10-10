@@ -1,12 +1,10 @@
 #pragma once
 
-
-struct Argument{
-    float x;
-};
+#include <string>
+#include <vector>
 
 
 struct FilterArgs{
     std::string name;
-    std::vector<Argument> args;
+    std::vector<std::string> args;
 };
