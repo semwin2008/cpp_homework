@@ -18,6 +18,10 @@ private:
 class Image{
 public:
     Image() = default;
+    Image(int n, int m) : matrix(std::vector<std::vector<Pixel>> (n, std::vector<Pixel>(m))) {}
+    Pixel& At(const size_t i, const size_t j) {
+        return matrix[i][j];
+    }
 
 private:
     std::vector<std::vector<Pixel>> matrix;
