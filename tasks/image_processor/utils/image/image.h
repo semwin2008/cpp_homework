@@ -7,6 +7,7 @@
 class Pixel{
 public:
     Pixel() = default;
+    Pixel(float r, float g, float b) : r(r), g(g), b(b) {}
 
 private:
     float r = 0;
