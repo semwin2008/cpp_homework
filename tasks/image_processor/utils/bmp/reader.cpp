@@ -14,6 +14,9 @@ Image BMP::read(const std::string& file) {
     BMP::BitmapFileHeader file_header{};
     BMP::BitmapInfoHeader info_header{};
     fin.read(reinterpret_cast<char*>(&file_header), sizeof(file_header));
+    if (!fin) {
+        throw BadFileFormat();
+    }
     fin.read(reinterpret_cast<char*>(&info_header), sizeof(info_header));
     if (!fin) {
         throw BadFileFormat();
