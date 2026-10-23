@@ -4,27 +4,96 @@
 CMakeFiles/image_processor.dir/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.o: CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp
 
 CMakeFiles/image_processor.dir/image_processor.o: image_processor.cpp
+CMakeFiles/image_processor.dir/image_processor.o: utils/args/args.h
 CMakeFiles/image_processor.dir/image_processor.o: utils/bmp/reader.h
 CMakeFiles/image_processor.dir/image_processor.o: utils/bmp/writer.h
+CMakeFiles/image_processor.dir/image_processor.o: utils/filter/filter.h
 CMakeFiles/image_processor.dir/image_processor.o: utils/filter/pipeline/pipeline.h
 CMakeFiles/image_processor.dir/image_processor.o: utils/image/image.h
 CMakeFiles/image_processor.dir/image_processor.o: utils/parser/parse.h
 
-CMakeFiles/image_processor.dir/utils/args/filterArgs.o: utils/args/filterArgs.cpp
-
-CMakeFiles/image_processor.dir/utils/args/inputArgs.o: utils/args/inputArgs.cpp
+CMakeFiles/image_processor.dir/utils/args/args.o: utils/args/args.cpp
 
 CMakeFiles/image_processor.dir/utils/bmp/reader.o: utils/bmp/reader.cpp
+CMakeFiles/image_processor.dir/utils/bmp/reader.o: utils/bmp/reader.h
+CMakeFiles/image_processor.dir/utils/bmp/reader.o: utils/exceptions/exceptions.h
+CMakeFiles/image_processor.dir/utils/bmp/reader.o: utils/image/image.h
 
+CMakeFiles/image_processor.dir/utils/bmp/writer.o: utils/bmp/reader.h
 CMakeFiles/image_processor.dir/utils/bmp/writer.o: utils/bmp/writer.cpp
+CMakeFiles/image_processor.dir/utils/bmp/writer.o: utils/bmp/writer.h
+CMakeFiles/image_processor.dir/utils/bmp/writer.o: utils/exceptions/exceptions.h
+CMakeFiles/image_processor.dir/utils/bmp/writer.o: utils/image/image.h
 
+CMakeFiles/image_processor.dir/utils/filter/crop/crop.o: utils/args/args.h
+CMakeFiles/image_processor.dir/utils/filter/crop/crop.o: utils/exceptions/exceptions.h
 CMakeFiles/image_processor.dir/utils/filter/crop/crop.o: utils/filter/crop/crop.cpp
+CMakeFiles/image_processor.dir/utils/filter/crop/crop.o: utils/filter/crop/crop.h
+CMakeFiles/image_processor.dir/utils/filter/crop/crop.o: utils/filter/filter.h
+CMakeFiles/image_processor.dir/utils/filter/crop/crop.o: utils/image/image.h
+
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o: utils/args/args.h
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o: utils/exceptions/exceptions.h
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o: utils/filter/edgeDetection/edgeDetection.cpp
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o: utils/filter/edgeDetection/edgeDetection.h
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o: utils/filter/filter.h
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o: utils/filter/grayscale/grayscale.h
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o: utils/image/image.h
+
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o: utils/args/args.h
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o: utils/exceptions/exceptions.h
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o: utils/filter/elasticTransform/elasticTransform.cpp
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o: utils/filter/elasticTransform/elasticTransform.h
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o: utils/filter/filter.h
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o: utils/filter/gaussianBlur/gaussianBlur.h
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o: utils/image/image.h
 
 CMakeFiles/image_processor.dir/utils/filter/filter.o: utils/filter/filter.cpp
 
+CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o: utils/args/args.h
+CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o: utils/exceptions/exceptions.h
+CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o: utils/filter/filter.h
+CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o: utils/filter/gaussianBlur/gaussianBlur.cpp
+CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o: utils/filter/gaussianBlur/gaussianBlur.h
+CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o: utils/image/image.h
+
+CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o: utils/args/args.h
+CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o: utils/exceptions/exceptions.h
+CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o: utils/filter/filter.h
+CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o: utils/filter/grayscale/grayscale.cpp
+CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o: utils/filter/grayscale/grayscale.h
+CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o: utils/image/image.h
+
+CMakeFiles/image_processor.dir/utils/filter/negative/negative.o: utils/args/args.h
+CMakeFiles/image_processor.dir/utils/filter/negative/negative.o: utils/filter/filter.h
+CMakeFiles/image_processor.dir/utils/filter/negative/negative.o: utils/filter/negative/negative.cpp
+CMakeFiles/image_processor.dir/utils/filter/negative/negative.o: utils/filter/negative/negative.h
+CMakeFiles/image_processor.dir/utils/filter/negative/negative.o: utils/image/image.h
+
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/args/args.h
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/crop/crop.h
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/edgeDetection/edgeDetection.h
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/elasticTransform/elasticTransform.h
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/factory.h
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/filter.h
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/gaussianBlur/gaussianBlur.h
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/grayscale/grayscale.h
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/negative/negative.h
 CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/pipeline/pipeline.cpp
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/pipeline/pipeline.h
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/sharpening/sharpening.h
+CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/image/image.h
+
+CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o: utils/args/args.h
+CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o: utils/filter/filter.h
+CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o: utils/filter/sharpening/sharpening.cpp
+CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o: utils/filter/sharpening/sharpening.h
+CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o: utils/image/image.h
 
 CMakeFiles/image_processor.dir/utils/image/image.o: utils/image/image.cpp
+CMakeFiles/image_processor.dir/utils/image/image.o: utils/image/image.h
 
+CMakeFiles/image_processor.dir/utils/parser/parse.o: utils/args/args.h
 CMakeFiles/image_processor.dir/utils/parser/parse.o: utils/parser/parse.cpp
+CMakeFiles/image_processor.dir/utils/parser/parse.o: utils/parser/parse.h
 

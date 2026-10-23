@@ -155,34 +155,19 @@ image_processor.s:
 .PHONY : image_processor.s
 
 # target to build an object file
-utils/args/filterArgs.o:
-	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/args/filterArgs.o
-.PHONY : utils/args/filterArgs.o
+utils/args/args.o:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/args/args.o
+.PHONY : utils/args/args.o
 
 # target to preprocess a source file
-utils/args/filterArgs.i:
-	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/args/filterArgs.i
-.PHONY : utils/args/filterArgs.i
+utils/args/args.i:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/args/args.i
+.PHONY : utils/args/args.i
 
 # target to generate assembly for a file
-utils/args/filterArgs.s:
-	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/args/filterArgs.s
-.PHONY : utils/args/filterArgs.s
-
-# target to build an object file
-utils/args/inputArgs.o:
-	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/args/inputArgs.o
-.PHONY : utils/args/inputArgs.o
-
-# target to preprocess a source file
-utils/args/inputArgs.i:
-	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/args/inputArgs.i
-.PHONY : utils/args/inputArgs.i
-
-# target to generate assembly for a file
-utils/args/inputArgs.s:
-	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/args/inputArgs.s
-.PHONY : utils/args/inputArgs.s
+utils/args/args.s:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/args/args.s
+.PHONY : utils/args/args.s
 
 # target to build an object file
 utils/bmp/reader.o:
@@ -230,6 +215,36 @@ utils/filter/crop/crop.s:
 .PHONY : utils/filter/crop/crop.s
 
 # target to build an object file
+utils/filter/edgeDetection/edgeDetection.o:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o
+.PHONY : utils/filter/edgeDetection/edgeDetection.o
+
+# target to preprocess a source file
+utils/filter/edgeDetection/edgeDetection.i:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.i
+.PHONY : utils/filter/edgeDetection/edgeDetection.i
+
+# target to generate assembly for a file
+utils/filter/edgeDetection/edgeDetection.s:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.s
+.PHONY : utils/filter/edgeDetection/edgeDetection.s
+
+# target to build an object file
+utils/filter/elasticTransform/elasticTransform.o:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o
+.PHONY : utils/filter/elasticTransform/elasticTransform.o
+
+# target to preprocess a source file
+utils/filter/elasticTransform/elasticTransform.i:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.i
+.PHONY : utils/filter/elasticTransform/elasticTransform.i
+
+# target to generate assembly for a file
+utils/filter/elasticTransform/elasticTransform.s:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.s
+.PHONY : utils/filter/elasticTransform/elasticTransform.s
+
+# target to build an object file
 utils/filter/filter.o:
 	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/filter.o
 .PHONY : utils/filter/filter.o
@@ -245,6 +260,51 @@ utils/filter/filter.s:
 .PHONY : utils/filter/filter.s
 
 # target to build an object file
+utils/filter/gaussianBlur/gaussianBlur.o:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o
+.PHONY : utils/filter/gaussianBlur/gaussianBlur.o
+
+# target to preprocess a source file
+utils/filter/gaussianBlur/gaussianBlur.i:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.i
+.PHONY : utils/filter/gaussianBlur/gaussianBlur.i
+
+# target to generate assembly for a file
+utils/filter/gaussianBlur/gaussianBlur.s:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.s
+.PHONY : utils/filter/gaussianBlur/gaussianBlur.s
+
+# target to build an object file
+utils/filter/grayscale/grayscale.o:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o
+.PHONY : utils/filter/grayscale/grayscale.o
+
+# target to preprocess a source file
+utils/filter/grayscale/grayscale.i:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.i
+.PHONY : utils/filter/grayscale/grayscale.i
+
+# target to generate assembly for a file
+utils/filter/grayscale/grayscale.s:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.s
+.PHONY : utils/filter/grayscale/grayscale.s
+
+# target to build an object file
+utils/filter/negative/negative.o:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/negative/negative.o
+.PHONY : utils/filter/negative/negative.o
+
+# target to preprocess a source file
+utils/filter/negative/negative.i:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/negative/negative.i
+.PHONY : utils/filter/negative/negative.i
+
+# target to generate assembly for a file
+utils/filter/negative/negative.s:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/negative/negative.s
+.PHONY : utils/filter/negative/negative.s
+
+# target to build an object file
 utils/filter/pipeline/pipeline.o:
 	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o
 .PHONY : utils/filter/pipeline/pipeline.o
@@ -258,6 +318,21 @@ utils/filter/pipeline/pipeline.i:
 utils/filter/pipeline/pipeline.s:
 	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.s
 .PHONY : utils/filter/pipeline/pipeline.s
+
+# target to build an object file
+utils/filter/sharpening/sharpening.o:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o
+.PHONY : utils/filter/sharpening/sharpening.o
+
+# target to preprocess a source file
+utils/filter/sharpening/sharpening.i:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.i
+.PHONY : utils/filter/sharpening/sharpening.i
+
+# target to generate assembly for a file
+utils/filter/sharpening/sharpening.s:
+	$(MAKE) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.s
+.PHONY : utils/filter/sharpening/sharpening.s
 
 # target to build an object file
 utils/image/image.o:
@@ -304,12 +379,9 @@ help:
 	@echo "... image_processor.o"
 	@echo "... image_processor.i"
 	@echo "... image_processor.s"
-	@echo "... utils/args/filterArgs.o"
-	@echo "... utils/args/filterArgs.i"
-	@echo "... utils/args/filterArgs.s"
-	@echo "... utils/args/inputArgs.o"
-	@echo "... utils/args/inputArgs.i"
-	@echo "... utils/args/inputArgs.s"
+	@echo "... utils/args/args.o"
+	@echo "... utils/args/args.i"
+	@echo "... utils/args/args.s"
 	@echo "... utils/bmp/reader.o"
 	@echo "... utils/bmp/reader.i"
 	@echo "... utils/bmp/reader.s"
@@ -319,12 +391,30 @@ help:
 	@echo "... utils/filter/crop/crop.o"
 	@echo "... utils/filter/crop/crop.i"
 	@echo "... utils/filter/crop/crop.s"
+	@echo "... utils/filter/edgeDetection/edgeDetection.o"
+	@echo "... utils/filter/edgeDetection/edgeDetection.i"
+	@echo "... utils/filter/edgeDetection/edgeDetection.s"
+	@echo "... utils/filter/elasticTransform/elasticTransform.o"
+	@echo "... utils/filter/elasticTransform/elasticTransform.i"
+	@echo "... utils/filter/elasticTransform/elasticTransform.s"
 	@echo "... utils/filter/filter.o"
 	@echo "... utils/filter/filter.i"
 	@echo "... utils/filter/filter.s"
+	@echo "... utils/filter/gaussianBlur/gaussianBlur.o"
+	@echo "... utils/filter/gaussianBlur/gaussianBlur.i"
+	@echo "... utils/filter/gaussianBlur/gaussianBlur.s"
+	@echo "... utils/filter/grayscale/grayscale.o"
+	@echo "... utils/filter/grayscale/grayscale.i"
+	@echo "... utils/filter/grayscale/grayscale.s"
+	@echo "... utils/filter/negative/negative.o"
+	@echo "... utils/filter/negative/negative.i"
+	@echo "... utils/filter/negative/negative.s"
 	@echo "... utils/filter/pipeline/pipeline.o"
 	@echo "... utils/filter/pipeline/pipeline.i"
 	@echo "... utils/filter/pipeline/pipeline.s"
+	@echo "... utils/filter/sharpening/sharpening.o"
+	@echo "... utils/filter/sharpening/sharpening.i"
+	@echo "... utils/filter/sharpening/sharpening.s"
 	@echo "... utils/image/image.o"
 	@echo "... utils/image/image.i"
 	@echo "... utils/image/image.s"

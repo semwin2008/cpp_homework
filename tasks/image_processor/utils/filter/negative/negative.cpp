@@ -1,4 +1,4 @@
-#include "utils/filter/negative/negative.h"
+#include "negative.h"
 
 
 void Negative::apply(Image& image) {

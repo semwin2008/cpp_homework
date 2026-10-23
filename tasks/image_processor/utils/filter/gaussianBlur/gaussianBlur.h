@@ -1,13 +1,14 @@
 #pragma once
 
-#include "utils/filter/filter.h"
-#include "utils/args/args.h"
+#include "../filter.h"
+#include "../../args/args.h"
 
 
-class GaussianBlur : Filter {
+class GaussianBlur : public Filter {
 public:
+    GaussianBlur() = default;
     GaussianBlur(const FilterArgs& args);
     void apply(Image& image) override;
 private:
-    float sigma_;
+    float sigma_ = 0;
 };

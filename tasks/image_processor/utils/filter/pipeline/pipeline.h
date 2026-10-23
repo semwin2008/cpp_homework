@@ -1,15 +1,15 @@
 #pragma once
 
-#include "filter/filter.h"
-#include "utils/args/args.h"
+#include "../filter.h"
+#include "../../args/args.h"
 #include <vector>
 #include <memory>
 
 
-class Pipeline : Filter{
+class Pipeline : public Filter{
 public:
     Pipeline(const FilterArgs& args) = delete;
-    Pipeline(const std::vector<FilterArgs>& args);
+    Pipeline(const std::vector<std::pair<std::string, FilterArgs>>& args);
     
     void apply(Image& image);
 private:

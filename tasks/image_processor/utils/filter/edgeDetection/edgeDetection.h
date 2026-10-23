@@ -1,10 +1,10 @@
 #pragma once
 
-#include "utils/filter/filter.h"
-#include "utils/args/args.h"
+#include "../filter.h"
+#include "../../args/args.h"
 
 
-class EdgeDetection : Filter {
+class EdgeDetection : public Filter {
 public:
     EdgeDetection(const FilterArgs& args);
     void apply(Image& image) override;

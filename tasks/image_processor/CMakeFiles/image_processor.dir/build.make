@@ -83,35 +83,22 @@ CMakeFiles/image_processor.dir/image_processor.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/image_processor.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/image_processor.cpp -o CMakeFiles/image_processor.dir/image_processor.s
 
-CMakeFiles/image_processor.dir/utils/args/filterArgs.o: CMakeFiles/image_processor.dir/flags.make
-CMakeFiles/image_processor.dir/utils/args/filterArgs.o: utils/args/filterArgs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/image_processor.dir/utils/args/filterArgs.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/args/filterArgs.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/args/filterArgs.cpp
+CMakeFiles/image_processor.dir/utils/args/args.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/utils/args/args.o: utils/args/args.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/image_processor.dir/utils/args/args.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/args/args.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/args/args.cpp
 
-CMakeFiles/image_processor.dir/utils/args/filterArgs.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/utils/args/filterArgs.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/args/filterArgs.cpp > CMakeFiles/image_processor.dir/utils/args/filterArgs.i
+CMakeFiles/image_processor.dir/utils/args/args.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/utils/args/args.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/args/args.cpp > CMakeFiles/image_processor.dir/utils/args/args.i
 
-CMakeFiles/image_processor.dir/utils/args/filterArgs.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/args/filterArgs.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/args/filterArgs.cpp -o CMakeFiles/image_processor.dir/utils/args/filterArgs.s
-
-CMakeFiles/image_processor.dir/utils/args/inputArgs.o: CMakeFiles/image_processor.dir/flags.make
-CMakeFiles/image_processor.dir/utils/args/inputArgs.o: utils/args/inputArgs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/image_processor.dir/utils/args/inputArgs.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/args/inputArgs.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/args/inputArgs.cpp
-
-CMakeFiles/image_processor.dir/utils/args/inputArgs.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/utils/args/inputArgs.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/args/inputArgs.cpp > CMakeFiles/image_processor.dir/utils/args/inputArgs.i
-
-CMakeFiles/image_processor.dir/utils/args/inputArgs.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/args/inputArgs.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/args/inputArgs.cpp -o CMakeFiles/image_processor.dir/utils/args/inputArgs.s
+CMakeFiles/image_processor.dir/utils/args/args.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/args/args.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/args/args.cpp -o CMakeFiles/image_processor.dir/utils/args/args.s
 
 CMakeFiles/image_processor.dir/utils/bmp/reader.o: CMakeFiles/image_processor.dir/flags.make
 CMakeFiles/image_processor.dir/utils/bmp/reader.o: utils/bmp/reader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/image_processor.dir/utils/bmp/reader.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/image_processor.dir/utils/bmp/reader.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/bmp/reader.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/bmp/reader.cpp
 
 CMakeFiles/image_processor.dir/utils/bmp/reader.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/image_processor.dir/utils/bmp/reader.s: cmake_force
 
 CMakeFiles/image_processor.dir/utils/bmp/writer.o: CMakeFiles/image_processor.dir/flags.make
 CMakeFiles/image_processor.dir/utils/bmp/writer.o: utils/bmp/writer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/image_processor.dir/utils/bmp/writer.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/image_processor.dir/utils/bmp/writer.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/bmp/writer.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/bmp/writer.cpp
 
 CMakeFiles/image_processor.dir/utils/bmp/writer.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/image_processor.dir/utils/bmp/writer.s: cmake_force
 
 CMakeFiles/image_processor.dir/utils/filter/crop/crop.o: CMakeFiles/image_processor.dir/flags.make
 CMakeFiles/image_processor.dir/utils/filter/crop/crop.o: utils/filter/crop/crop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/crop/crop.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/crop/crop.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/filter/crop/crop.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/crop/crop.cpp
 
 CMakeFiles/image_processor.dir/utils/filter/crop/crop.i: cmake_force
@@ -148,9 +135,35 @@ CMakeFiles/image_processor.dir/utils/filter/crop/crop.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/filter/crop/crop.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/crop/crop.cpp -o CMakeFiles/image_processor.dir/utils/filter/crop/crop.s
 
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o: utils/filter/edgeDetection/edgeDetection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/edgeDetection/edgeDetection.cpp
+
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/edgeDetection/edgeDetection.cpp > CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.i
+
+CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/edgeDetection/edgeDetection.cpp -o CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.s
+
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o: utils/filter/elasticTransform/elasticTransform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/elasticTransform/elasticTransform.cpp
+
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/elasticTransform/elasticTransform.cpp > CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.i
+
+CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/elasticTransform/elasticTransform.cpp -o CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.s
+
 CMakeFiles/image_processor.dir/utils/filter/filter.o: CMakeFiles/image_processor.dir/flags.make
 CMakeFiles/image_processor.dir/utils/filter/filter.o: utils/filter/filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/filter.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/filter.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/filter/filter.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/filter.cpp
 
 CMakeFiles/image_processor.dir/utils/filter/filter.i: cmake_force
@@ -161,9 +174,48 @@ CMakeFiles/image_processor.dir/utils/filter/filter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/filter/filter.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/filter.cpp -o CMakeFiles/image_processor.dir/utils/filter/filter.s
 
+CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o: utils/filter/gaussianBlur/gaussianBlur.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/gaussianBlur/gaussianBlur.cpp
+
+CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/gaussianBlur/gaussianBlur.cpp > CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.i
+
+CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/gaussianBlur/gaussianBlur.cpp -o CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.s
+
+CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o: utils/filter/grayscale/grayscale.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/grayscale/grayscale.cpp
+
+CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/grayscale/grayscale.cpp > CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.i
+
+CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/grayscale/grayscale.cpp -o CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.s
+
+CMakeFiles/image_processor.dir/utils/filter/negative/negative.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/utils/filter/negative/negative.o: utils/filter/negative/negative.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/negative/negative.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/filter/negative/negative.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/negative/negative.cpp
+
+CMakeFiles/image_processor.dir/utils/filter/negative/negative.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/utils/filter/negative/negative.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/negative/negative.cpp > CMakeFiles/image_processor.dir/utils/filter/negative/negative.i
+
+CMakeFiles/image_processor.dir/utils/filter/negative/negative.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/filter/negative/negative.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/negative/negative.cpp -o CMakeFiles/image_processor.dir/utils/filter/negative/negative.s
+
 CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: CMakeFiles/image_processor.dir/flags.make
 CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o: utils/filter/pipeline/pipeline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/pipeline/pipeline.cpp
 
 CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.i: cmake_force
@@ -174,9 +226,22 @@ CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/pipeline/pipeline.cpp -o CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.s
 
+CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o: utils/filter/sharpening/sharpening.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/sharpening/sharpening.cpp
+
+CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/sharpening/sharpening.cpp > CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.i
+
+CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/filter/sharpening/sharpening.cpp -o CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.s
+
 CMakeFiles/image_processor.dir/utils/image/image.o: CMakeFiles/image_processor.dir/flags.make
 CMakeFiles/image_processor.dir/utils/image/image.o: utils/image/image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/image_processor.dir/utils/image/image.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/image_processor.dir/utils/image/image.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/image/image.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/image/image.cpp
 
 CMakeFiles/image_processor.dir/utils/image/image.i: cmake_force
@@ -189,7 +254,7 @@ CMakeFiles/image_processor.dir/utils/image/image.s: cmake_force
 
 CMakeFiles/image_processor.dir/utils/parser/parse.o: CMakeFiles/image_processor.dir/flags.make
 CMakeFiles/image_processor.dir/utils/parser/parse.o: utils/parser/parse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/image_processor.dir/utils/parser/parse.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/image_processor.dir/utils/parser/parse.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/utils/parser/parse.o -c /home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/utils/parser/parse.cpp
 
 CMakeFiles/image_processor.dir/utils/parser/parse.i: cmake_force
@@ -204,13 +269,18 @@ CMakeFiles/image_processor.dir/utils/parser/parse.s: cmake_force
 image_processor_OBJECTS = \
 "CMakeFiles/image_processor.dir/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.o" \
 "CMakeFiles/image_processor.dir/image_processor.o" \
-"CMakeFiles/image_processor.dir/utils/args/filterArgs.o" \
-"CMakeFiles/image_processor.dir/utils/args/inputArgs.o" \
+"CMakeFiles/image_processor.dir/utils/args/args.o" \
 "CMakeFiles/image_processor.dir/utils/bmp/reader.o" \
 "CMakeFiles/image_processor.dir/utils/bmp/writer.o" \
 "CMakeFiles/image_processor.dir/utils/filter/crop/crop.o" \
+"CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o" \
+"CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o" \
 "CMakeFiles/image_processor.dir/utils/filter/filter.o" \
+"CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o" \
+"CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o" \
+"CMakeFiles/image_processor.dir/utils/filter/negative/negative.o" \
 "CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o" \
+"CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o" \
 "CMakeFiles/image_processor.dir/utils/image/image.o" \
 "CMakeFiles/image_processor.dir/utils/parser/parse.o"
 
@@ -219,18 +289,23 @@ image_processor_EXTERNAL_OBJECTS =
 
 image_processor: CMakeFiles/image_processor.dir/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.o
 image_processor: CMakeFiles/image_processor.dir/image_processor.o
-image_processor: CMakeFiles/image_processor.dir/utils/args/filterArgs.o
-image_processor: CMakeFiles/image_processor.dir/utils/args/inputArgs.o
+image_processor: CMakeFiles/image_processor.dir/utils/args/args.o
 image_processor: CMakeFiles/image_processor.dir/utils/bmp/reader.o
 image_processor: CMakeFiles/image_processor.dir/utils/bmp/writer.o
 image_processor: CMakeFiles/image_processor.dir/utils/filter/crop/crop.o
+image_processor: CMakeFiles/image_processor.dir/utils/filter/edgeDetection/edgeDetection.o
+image_processor: CMakeFiles/image_processor.dir/utils/filter/elasticTransform/elasticTransform.o
 image_processor: CMakeFiles/image_processor.dir/utils/filter/filter.o
+image_processor: CMakeFiles/image_processor.dir/utils/filter/gaussianBlur/gaussianBlur.o
+image_processor: CMakeFiles/image_processor.dir/utils/filter/grayscale/grayscale.o
+image_processor: CMakeFiles/image_processor.dir/utils/filter/negative/negative.o
 image_processor: CMakeFiles/image_processor.dir/utils/filter/pipeline/pipeline.o
+image_processor: CMakeFiles/image_processor.dir/utils/filter/sharpening/sharpening.o
 image_processor: CMakeFiles/image_processor.dir/utils/image/image.o
 image_processor: CMakeFiles/image_processor.dir/utils/parser/parse.o
 image_processor: CMakeFiles/image_processor.dir/build.make
 image_processor: CMakeFiles/image_processor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable image_processor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable image_processor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image_processor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

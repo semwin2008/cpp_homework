@@ -1,17 +1,19 @@
 #pragma once
 
-#include "utils/filter/filter.h"
-#include "utils/args/args.h"
+#include "../filter.h"
+#include "../../args/args.h"
+#include "../gaussianBlur/gaussianBlur.h"
 #include <string>
+#include <random>
 
 
-class ElasticTransform : Filter {
+class ElasticTransform : public Filter {
 public:
     ElasticTransform(const FilterArgs& args);
     void apply(Image& image) override;
 private:
     float alpha_;
-    float sigma_;
+    GaussianBlur blur_;
     std::string interpolation_mode_ = "nearest";
-    int seed_ = -1;
+    std::mt19937 gen_;
 };

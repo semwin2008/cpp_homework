@@ -2,13 +2,13 @@
 
 #include <unordered_map>
 #include <functional>
-#include "utils/filter/crop/crop.h"
-#include "utils/filter/grayscale/grayscale.h"
-#include "utils/filter/negative/negative.h"
-#include "utils/filter/sharpening/sharpening.h"
-#include "utils/filter/edgeDetection/edgeDetection.h"
-#include "utils/filter/gaussianBlur/gaussianBlur.h"
-#include "utils/filter/elasticTransform/elasticTransform.h"
+#include "crop/crop.h"
+#include "grayscale/grayscale.h"
+#include "negative/negative.h"
+#include "sharpening/sharpening.h"
+#include "edgeDetection/edgeDetection.h"
+#include "gaussianBlur/gaussianBlur.h"
+#include "elasticTransform/elasticTransform.h"
 
 
 template<class Filt>

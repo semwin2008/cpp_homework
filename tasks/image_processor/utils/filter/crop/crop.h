@@ -1,10 +1,10 @@
 #pragma once
 
-#include "utils/filter/filter.h"
-#include "utils/args/args.h"
+#include "../../filter/filter.h"
+#include "../../args/args.h"
 
 
-class Crop : Filter {
+class Crop : public Filter {
 public:
     Crop(const FilterArgs& args);
     void apply(Image& image) override;

@@ -1,9 +1,9 @@
-#include "utils/filter/pipeline/pipeline.h"
-#include "utils/filter/factory.h"
+#include "pipeline.h"
+#include "../factory.h"
 
 
 Pipeline::Pipeline(const std::vector<std::pair<std::string, FilterArgs>>& args) {
-    for (auto [filter_name, filter_args]) {
+    for (auto [filter_name, filter_args] : args) {
         if (NAME_FILTER_MATCH.find(filter_name) == NAME_FILTER_MATCH.end()) {
             throw "No such filter " + filter_name;
         }

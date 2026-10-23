@@ -1,7 +1,7 @@
-#include "utils/parser/parse.h"
+#include "parse.h"
 
 
-InputArgs parse(const int argc, const char** argv) {
+InputArgs parse(int argc, char** argv) {
     InputArgs args;
     if (argc == 2) {
         throw "Need to specify input file";
@@ -24,14 +24,11 @@ InputArgs parse(const int argc, const char** argv) {
                 if (args.filter_args.empty()) {
                     throw "need to specify the filter name first";
                 }
-                args.filter_args.back().args.push_back(argv[i]);
+                args.filter_args.back().second.push_back(argv[i]);
             }
             // filter name
             else {
-                args.filter_args.push_back((FilterArgs){ 
-                    .name=((std::string)argv[i]).substr(1), 
-                    .args={} 
-                });
+                args.filter_args.emplace_back(((std::string)argv[i]).substr(1), FilterArgs{});
             }
         }
     }

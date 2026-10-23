@@ -1,4 +1,4 @@
-#include "utils/filter/sharpening/sharpening.h"
+#include "sharpening.h"
 
 
 void Sharpening::apply(Image& image) {

@@ -3,6 +3,7 @@
 #include "utils/bmp/writer.h"
 #include "utils/filter/pipeline/pipeline.h"
 #include "utils/image/image.h"
+#include "utils/args/args.h"
 
 
 int main(int argc, char** argv) {

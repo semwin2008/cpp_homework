@@ -1,6 +1,6 @@
-#include "utils/bmp/reader.h"
+#include "reader.h"
 #include <fstream>
-#include "utils/exceptions/exceptions.h"
+#include "../exceptions/exceptions.h"
 #include <vector>
 
 

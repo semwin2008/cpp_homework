@@ -1,5 +1,5 @@
-#include "utils/filter/grayscale/grayscale.h"
-#include "utils/exceptions/exceptions.h"
+#include "grayscale.h"
+#include "../../exceptions/exceptions.h"
 
 
 Grayscale::Grayscale(const FilterArgs& args) {
