@@ -11,6 +11,10 @@ class BadFileFormat : std::exception {
 
 };
 
+class UnableToWriteFile : std::exception {
+
+};
+
 class BadCommandLineArgument : std::exception {
 
 };

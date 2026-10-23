@@ -10,6 +10,8 @@ std::unique_ptr<Filter> cropFactory(const FilterArgs& args);
 class Crop : Filter {
 public:
     Crop(const FilterArgs& args);
-    Image apply(const Image& image);
+    void apply(Image& image) override;
 private:
+    size_t height_;
+    size_t width_;
 };
