@@ -11,7 +11,7 @@ public:
     Pipeline(const FilterArgs& args) = delete;
     Pipeline(const std::vector<FilterArgs>& args);
     
-    Image apply(const Image& image);
+    void apply(Image& image);
 private:
     std::vector<std::unique_ptr<Filter>> filters;
 };
