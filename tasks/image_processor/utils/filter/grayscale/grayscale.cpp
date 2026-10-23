@@ -3,7 +3,7 @@
 
 
 Grayscale::Grayscale(const FilterArgs& args) {
-    if (args.args.size() != 0) {
+    if (args.size() != 0) {
         throw BadFilterArgument();
     }
 }

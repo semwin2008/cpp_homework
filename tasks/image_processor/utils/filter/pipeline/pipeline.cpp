@@ -1,19 +1,19 @@
 #include "utils/filter/pipeline/pipeline.h"
-#include "utils/filter/factory/factory.h"
+#include "utils/filter/factory.h"
 
 
-Pipeline::Pipeline(const std::vector<FilterArgs>& args) {
-    for (size_t i = 0; i < args.size(); ++i) {
-        if (NAME_FILTER_MATCH.find(args[i].name) == NAME_FILTER_MATCH.end()) {
-            throw "No such filter " + args[i].name;
+Pipeline::Pipeline(const std::vector<std::pair<std::string, FilterArgs>>& args) {
+    for (auto [filter_name, filter_args]) {
+        if (NAME_FILTER_MATCH.find(filter_name) == NAME_FILTER_MATCH.end()) {
+            throw "No such filter " + filter_name;
         }
-        filters.push_back(NAME_FILTER_MATCH.at(args[i].name)(args[i]));
+        filters_.push_back(NAME_FILTER_MATCH.at(filter_name)(filter_args));
     }
 }
 
 void Pipeline::apply(Image& image) {
     Image tmp = image;
-    for (const std::unique_ptr<Filter>& filter : filters) {
+    for (const std::unique_ptr<Filter>& filter : filters_) {
         filter->apply(tmp);
     }
 }

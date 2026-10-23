@@ -1,8 +1,7 @@
 #pragma once
 
 #include "utils/filter/filter.h"
-#include "utils/args/filterArgs.h"
-#include <memory>
+#include "utils/args/args.h"
 
 
 class Crop : Filter {

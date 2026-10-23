@@ -1,11 +1,8 @@
 #pragma once
 
 #include "utils/filter/filter.h"
-#include "utils/args/filterArgs.h"
-#include <memory>
+#include "utils/args/args.h"
 
-
-std::unique_ptr<Filter> grayscaleFactory(const FilterArgs& args);
 
 class Grayscale : Filter {
 public:

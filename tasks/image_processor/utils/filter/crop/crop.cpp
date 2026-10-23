@@ -3,11 +3,11 @@
 
 
 Crop::Crop(const FilterArgs& args) {
-    if (args.args.size() != 2) {
+    if (args.size() != 2) {
         throw BadFilterArgument();
     }
-    height_ = std::stoull(args.args[1]);
-    width_ = std::stoull(args.args[0]);
+    height_ = std::stoull(args[1]);
+    width_ = std::stoull(args[0]);
     if (height_ == 0 || width_ == 0) {
         throw BadFilterArgument();
     }

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "filter/filter.h"
-#include "utils/args/filterArgs.h"
+#include "utils/args/args.h"
 #include <vector>
 #include <memory>
 
@@ -13,5 +13,5 @@ public:
     
     void apply(Image& image);
 private:
-    std::vector<std::unique_ptr<Filter>> filters;
+    std::vector<std::unique_ptr<Filter>> filters_;
 };

@@ -1,14 +1,29 @@
 #pragma once
 
-
 #include <vector>
+#include <cstdint>
 
+
+const uint8_t PIXEL_MAX_VALUE = 255;
+const float SCALE_TO_FLOAT = 1.0f / PIXEL_MAX_VALUE;
 
 struct Pixel{
     Pixel() = default;
     Pixel(float value) : r(value), g(value), b(value) {}
+    // Unnormalized input
+    Pixel(uint8_t r, uint8_t g, uint8_t b) : 
+        r(r * SCALE_TO_FLOAT), 
+        g(g * SCALE_TO_FLOAT), 
+        b(b * SCALE_TO_FLOAT) {}
+    // Normalized input
     Pixel(float r, float g, float b) : r(r), g(g), b(b) {}
 
+    // Arithmetics
+    Pixel operator+(const Pixel& rhs) const;
+    Pixel operator-(const Pixel& rhs) const;
+    Pixel operator*(const Pixel& rhs) const;
+
+    // fields
     float r = 0;
     float g = 0;
     float b = 0;
@@ -29,6 +44,7 @@ public:
         if (matrix_.empty()) return 0;
         return matrix_[0].size();
     }
+    void applyConv(std::vector<std::vector<float>>& kernel);
 
 private:
     std::vector<std::vector<Pixel>> matrix_;
