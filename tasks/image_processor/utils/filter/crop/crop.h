@@ -5,8 +5,6 @@
 #include <memory>
 
 
-std::unique_ptr<Filter> cropFactory(const FilterArgs& args);
-
 class Crop : Filter {
 public:
     Crop(const FilterArgs& args);

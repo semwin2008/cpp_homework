@@ -6,6 +6,7 @@
 
 struct Pixel{
     Pixel() = default;
+    Pixel(float value) : r(value), g(value), b(value) {}
     Pixel(float r, float g, float b) : r(r), g(g), b(b) {}
 
     float r = 0;

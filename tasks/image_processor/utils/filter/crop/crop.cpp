@@ -2,10 +2,6 @@
 #include "utils/exceptions/exceptions.h"
 
 
-std::unique_ptr<Filter> cropFactory(const FilterArgs& args) {
-    return std::make_unique<Filter>(Crop(args));
-}
-
 Crop::Crop(const FilterArgs& args) {
     if (args.args.size() != 2) {
         throw BadFilterArgument();

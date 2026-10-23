@@ -5,8 +5,12 @@
 #include "utils/filter/crop/crop.h"
 
 
-// Factory
+template<class Filt>
+std::unique_ptr<Filter> Factory(const FilterArgs& args) {
+    return std::make_unique<Filter>(Filt(args));
+}
+
 const std::unordered_map<const std::string, 
 std::function<std::unique_ptr<Filter>(const FilterArgs&)>> NAME_FILTER_MATCH = {
-    {"crop", cropFactory}
+    {"crop", Factory<Crop>}
 };
