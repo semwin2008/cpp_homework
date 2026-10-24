@@ -1,3 +1,0 @@
-/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles/rebuild_cache.dir
-/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles/edit_cache.dir
-/home/vboxuser/my_hw/ami-Vinogradov-Semion-semwin2008/tasks/image_processor/CMakeFiles/image_processor.dir
