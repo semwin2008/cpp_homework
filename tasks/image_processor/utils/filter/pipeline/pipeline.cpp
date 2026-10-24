@@ -14,5 +14,6 @@ Pipeline::Pipeline(const std::vector<std::pair<std::string, FilterArgs>>& args) 
 void Pipeline::apply(Image& image) {
     for (const std::unique_ptr<Filter>& filter : filters_) {
         filter->apply(image);
+        image.NormalizeValues();
     }
 }

@@ -7,11 +7,7 @@
 #include <cmath>
 
 
-const uint16_t BFTYPE = 0x4D42;
-const uint16_t BIBITCOUNT = 24;
-
 Image BMP::read(const std::string& file) {
-    std::cerr << "DEBUG 1: Opening file..." << std::endl;
     std::ifstream fin(file, std::ios::binary);
     if (!fin) {
         throw FileNotFoundException("Tried to read input file");

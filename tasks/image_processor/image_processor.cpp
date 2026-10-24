@@ -8,15 +8,15 @@
 
 
 int main(int argc, char** argv) {
-    // try{
+    try{
         InputArgs input_args = parse(argc, argv);
         Image image = BMP::read(input_args.input_file_path);
         Pipeline pipeline(input_args.filter_args);
         pipeline.apply(image);
         BMP::write(input_args.output_file_path, image);
         return 0;
-    // } catch (const std::exception& a) {
-    //     std::cerr << a.what() << std::endl;
-    //     return 1;
-    // }
+    } catch (const std::exception& a) {
+        std::cerr << a.what() << std::endl;
+        return 1;
+    }
 }

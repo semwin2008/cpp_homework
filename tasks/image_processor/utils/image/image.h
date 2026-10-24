@@ -26,6 +26,8 @@ struct Pixel{
     Pixel operator+(const Pixel& rhs) const;
     Pixel operator-(const Pixel& rhs) const;
     Pixel operator*(const Pixel& rhs) const;
+
+    void Clamp(float a, float b);
 };
 
 
@@ -33,6 +35,7 @@ class Image{
 public:
     Image() = default;
     Image(int n, int m) : matrix_(std::vector<std::vector<Pixel>> (n, std::vector<Pixel>(m))) {}
+    Image(const std::vector<std::vector<Pixel>> matrix) : matrix_(matrix) {}
     Pixel& At(const size_t i, const size_t j){
         return matrix_[i][j];
     }
@@ -48,6 +51,8 @@ public:
         return matrix_[0].size();
     }
     void applyConv(const std::vector<std::vector<float>>& kernel);
+    // Normalization
+    void NormalizeValues();
 
 private:
     std::vector<std::vector<Pixel>> matrix_;

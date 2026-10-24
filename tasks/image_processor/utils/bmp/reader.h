@@ -6,6 +6,9 @@
 
 namespace BMP{
 
+    const uint16_t BFTYPE = 0x4D42;
+    const uint16_t BIBITCOUNT = 24;
+    
     #pragma pack(push, 1)
     struct BitmapFileHeader {
         uint16_t bfType;

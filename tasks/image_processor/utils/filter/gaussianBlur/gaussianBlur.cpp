@@ -18,7 +18,7 @@ void GaussianBlur::apply(Image& image) {
         for (int j = 0; j < kernel_size; ++j) {
             int x = i - distance;
             int y = j - distance;
-            kernel[i][j] = expf(- (x * x + y * y) / (2 * sigma_ * sigma_)) / (M_PI_2 * sigma_ * sigma_);
+            kernel[i][j] = expf(- (x * x + y * y) / (2 * sigma_ * sigma_)) / (M_PI * 2 * sigma_ * sigma_);
         }
     }
     image.applyConv(kernel);

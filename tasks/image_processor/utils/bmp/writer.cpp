@@ -11,14 +11,11 @@ void BMP::write(const std::string& path, const Image& image) {
     if (!fout) {
         throw FileNotFoundException("Tried to write to file: " + path);
     }
-
     size_t width = image.GetWidth();
     size_t height = image.GetHeight();
     if (width == 0 || height == 0) {
         throw std::runtime_error("Cannot write empty image to BMP");
     }
-    
-    // Выравнивание строки по границе 4 байт
     size_t rowSizeWithoutPadding = width * 3;
     size_t rowSize = ((rowSizeWithoutPadding + 3) / 4) * 4;
     
@@ -27,7 +24,7 @@ void BMP::write(const std::string& path, const Image& image) {
     const size_t file_size = headers_size + pixel_data_size;
 
     BMP::BitmapFileHeader file_header{};
-    file_header.bfType = 0x4D42;
+    file_header.bfType = BFTYPE;
     file_header.bfSize = static_cast<uint32_t>(file_size);
     file_header.bfReserved1 = 0;
     file_header.bfReserved2 = 0;
@@ -36,9 +33,9 @@ void BMP::write(const std::string& path, const Image& image) {
     BMP::BitmapInfoHeader info_header{};
     info_header.biSize = static_cast<uint32_t>(sizeof(BMP::BitmapInfoHeader));
     info_header.biWidth = static_cast<int32_t>(width);
-    info_header.biHeight = static_cast<int32_t>(height); // Положительное значение означает Bottom-Up хранение
+    info_header.biHeight = static_cast<int32_t>(height);
     info_header.biPlanes = 1;
-    info_header.biBitCount = 24;
+    info_header.biBitCount = BIBITCOUNT;
     info_header.biCompression = 0; // BI_RGB
     info_header.biSizeImage = static_cast<uint32_t>(pixel_data_size);
     info_header.biXPelsPerMeter = 0;
@@ -51,24 +48,12 @@ void BMP::write(const std::string& path, const Image& image) {
     if (!fout) {
         throw UnableToWriteFileException("tried writing output file headers");
     }
-
-    // Буфер для одной строки с учётом паддинга
     std::vector<uint8_t> rowBuffer(rowSize, 0); 
-
-    for (size_t i = 0; i < height; ++i) {        
-        // Очищаем буфер на случай, если padding не был перезаписан (хотя мы инициализировали его нулями при создании)
-        // Но лучше явно обнулять только часть с данными, если бы мы использовали reuse буфера.
-        // Здесь мы просто заполняем первые width * 3 байт.
-        
+    for (size_t i = 0; i < height; ++i) {
         for (size_t j = 0; j < width; ++j) {
-            // Стандартный BMP хранится снизу вверх. 
-            // Строка i в цикле (сверху вниз) соответствует строке (height - 1 - i) в файле.
             size_t sourceRowIndex = height - 1 - i;
-            
             Pixel pixel = image.At(sourceRowIndex, j);
-            
             size_t byteIndex = j * 3;
-            // Порядок байт в BMP: B, G, R
             rowBuffer[byteIndex]     = static_cast<uint8_t>(pixel.b * PIXEL_MAX_VALUE);
             rowBuffer[byteIndex + 1] = static_cast<uint8_t>(pixel.g * PIXEL_MAX_VALUE);
             rowBuffer[byteIndex + 2] = static_cast<uint8_t>(pixel.r * PIXEL_MAX_VALUE);

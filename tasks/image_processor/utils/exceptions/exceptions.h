@@ -15,6 +15,11 @@ public:
     using std::runtime_error::runtime_error;
 };
 
+class EmptyKernelException : public std::runtime_error {
+public:
+    using std::runtime_error::runtime_error;
+};
+
 class UnableToWriteFileException : public std::runtime_error {
 public:
     using std::runtime_error::runtime_error;
