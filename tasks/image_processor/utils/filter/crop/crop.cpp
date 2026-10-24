@@ -4,12 +4,12 @@
 
 Crop::Crop(const FilterArgs& args) {
     if (args.size() != 2) {
-        throw BadFilterArgument();
+        throw BadFilterArgumentException("crop takes exactly 2 args (height, width)");
     }
     height_ = std::stoull(args[1]);
     width_ = std::stoull(args[0]);
     if (height_ == 0 || width_ == 0) {
-        throw BadFilterArgument();
+        throw BadFilterArgumentException("cannot result in empty image");
     }
 }
 

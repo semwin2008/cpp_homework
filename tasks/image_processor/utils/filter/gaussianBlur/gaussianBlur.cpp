@@ -5,7 +5,7 @@
 
 GaussianBlur::GaussianBlur(const FilterArgs& args) {
     if (args.size() != 1) {
-        throw BadFilterArgument();
+        throw BadFilterArgumentException("gaussian blur takes exactly 1 arg (sigma)");
     }
     sigma_ = std::stof(args[0]);
 }

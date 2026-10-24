@@ -5,7 +5,7 @@
 
 EdgeDetection::EdgeDetection(const FilterArgs& args) {
     if (args.size() != 1) {
-        throw BadFilterArgument();
+        throw BadFilterArgumentException("edge detection takes exactly 1 arg (threshold)");
     }
     threshold_ = std::stof(args[0]);
 }

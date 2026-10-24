@@ -9,7 +9,7 @@
 void BMP::write(const std::string& path, const Image& image) {
     std::ofstream fout(path, std::ios::binary);
     if (!fout) {
-        throw FileNotFoundException();
+        throw FileNotFoundException("Tried to write to file: " + path);
     }
 
     size_t width = image.GetWidth();
@@ -34,7 +34,7 @@ void BMP::write(const std::string& path, const Image& image) {
     info_header.biWidth = static_cast<int32_t>(width);
     info_header.biHeight = static_cast<int32_t>(height);
     info_header.biPlanes = 1;
-    info_header.biBitCount = 32;
+    info_header.biBitCount = 24;
     info_header.biCompression = 0; // BI_RGB
     info_header.biSizeImage = static_cast<uint32_t>(pixel_data_size);
     info_header.biXPelsPerMeter = 0;
@@ -45,7 +45,7 @@ void BMP::write(const std::string& path, const Image& image) {
     fout.write(reinterpret_cast<const char*>(&file_header), sizeof(file_header));
     fout.write(reinterpret_cast<const char*>(&info_header), sizeof(info_header));
     if (!fout) {
-        throw UnableToWriteFile();
+        throw UnableToWriteFileException("tried writing output file headers");
     }
 
     std::vector<BMP::Pixel32> row_buffer(width);
@@ -62,7 +62,7 @@ void BMP::write(const std::string& path, const Image& image) {
         }
         fout.write(reinterpret_cast<const char*>(row_buffer.data()), row_buffer.size() * sizeof(BMP::Pixel32));
         if (!fout) {
-            throw UnableToWriteFile();
+            throw UnableToWriteFileException("tried to write output pixels to file");
         }
     }
 }

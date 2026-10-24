@@ -6,7 +6,7 @@
 
 class Negative : public Filter {
 public:
-    Negative(const FilterArgs& args) {}
+    Negative(const FilterArgs& args);
     void apply(Image& image) override;
 private:
 };

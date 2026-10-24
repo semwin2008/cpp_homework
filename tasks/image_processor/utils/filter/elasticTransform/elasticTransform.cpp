@@ -8,7 +8,9 @@
 
 ElasticTransform::ElasticTransform(const FilterArgs& args) {
     if (args.size() < 2 || args.size() > 4) {
-        throw BadFilterArgument();
+        throw BadFilterArgumentException(
+            "elastic transform takes from 2 to 4 args (aplha, sigma, interpolation mode (optional), seed (optional))"
+        );
     }
     alpha_ = std::stof(args[0]);
     float sigma = std::stof(args[1]);
@@ -17,7 +19,7 @@ ElasticTransform::ElasticTransform(const FilterArgs& args) {
         if (args[2] == "nearest" || args[2] == "bilinear") {
             interpolation_mode_ = args[2];
         }else{
-            throw BadFilterArgument();
+            throw BadFilterArgumentException("interpolation mode must be either \"nearest\" or \"bilinear\"");
         }
     }
     if (args.size() == 4) {

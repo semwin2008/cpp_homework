@@ -4,7 +4,7 @@
 
 Grayscale::Grayscale(const FilterArgs& args) {
     if (args.size() != 0) {
-        throw BadFilterArgument();
+        throw BadFilterArgumentException("grayscale takes no args");
     }
 }
 

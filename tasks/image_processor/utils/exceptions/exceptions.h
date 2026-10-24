@@ -1,29 +1,37 @@
 #pragma once
 
 #include <exception>
+#include <string>
+#include <stdexcept>
 
 
-class FileNotFoundException : std::exception {
-    
+class FileNotFoundException : public std::runtime_error {
+public:
+    using std::runtime_error::runtime_error;
 };
 
-class BadFileFormat : std::exception {
-
+class BadFileFormatException : public std::runtime_error {
+public:
+    using std::runtime_error::runtime_error;
 };
 
-class UnableToWriteFile : std::exception {
-
+class UnableToWriteFileException : public std::runtime_error {
+public:
+    using std::runtime_error::runtime_error;
 };
 
-class BadCommandLineArgument : std::exception {
-
+class BadCommandLineArgumentException : public std::runtime_error {
+public:
+    using std::runtime_error::runtime_error;
 };
 
-class FilterDoesNotExist : std::exception {
-
+class FilterDoesNotExistException : public std::runtime_error {
+public:
+    using std::runtime_error::runtime_error;
 };
 
-class BadFilterArgument : std::exception {
-
+class BadFilterArgumentException : public std::runtime_error {
+public:
+    using std::runtime_error::runtime_error;
 };
 

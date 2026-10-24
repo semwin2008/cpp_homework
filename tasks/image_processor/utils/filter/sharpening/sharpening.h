@@ -6,7 +6,7 @@
 
 class Sharpening : public Filter {
 public:
-    Sharpening(const FilterArgs& args) {}
+    Sharpening(const FilterArgs& args);
     void apply(Image& image) override;
 private:
 };
