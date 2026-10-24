@@ -1,6 +1,8 @@
-file(GLOB_RECURSE IMAGE_PROCESSOR_SOURCES CONFIGURE_DEPENDS "*.cpp" "*.h")
+# Собираем все .cpp только из папки utils
+file(GLOB_RECURSE UTILS_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/utils/*.cpp")
 
 add_executable(
     image_processor
-    ${IMAGE_PROCESSOR_SOURCES}
+    image_processor.cpp
+    ${UTILS_SOURCES}
 )
