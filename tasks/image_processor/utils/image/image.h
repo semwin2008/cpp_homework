@@ -24,6 +24,7 @@ struct Pixel{
 
     // Arithmetics
     Pixel operator+(const Pixel& rhs) const;
+    void operator+=(const Pixel& rhs);
     Pixel operator-(const Pixel& rhs) const;
     Pixel operator*(const Pixel& rhs) const;
 

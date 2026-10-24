@@ -1,6 +1,5 @@
 #include "crop.h"
 #include "../../exceptions/exceptions.h"
-#include <iostream>
 
 
 Crop::Crop(const FilterArgs& args) {

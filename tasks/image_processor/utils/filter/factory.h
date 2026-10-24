@@ -10,6 +10,8 @@
 #include "gaussianBlur/gaussianBlur.h"
 #include "elasticTransform/elasticTransform.h"
 
+#include "cropExtended/cropExtended.h"
+
 
 template<class Filt>
 std::unique_ptr<Filter> Factory(const FilterArgs& args) {
@@ -25,4 +27,6 @@ std::function<std::unique_ptr<Filter>(const FilterArgs&)>> NAME_FILTER_MATCH = {
     {"edge", Factory<EdgeDetection>},
     {"blur", Factory<GaussianBlur>},
     {"elastic", Factory<ElasticTransform>},
+
+    {"crop-ext", Factory<CropExtended>},
 };
