@@ -12,8 +12,7 @@ Pipeline::Pipeline(const std::vector<std::pair<std::string, FilterArgs>>& args) 
 }
 
 void Pipeline::apply(Image& image) {
-    Image tmp = image;
     for (const std::unique_ptr<Filter>& filter : filters_) {
-        filter->apply(tmp);
+        filter->apply(image);
     }
 }

@@ -1,5 +1,6 @@
 #include "negative.h"
 #include "../../exceptions/exceptions.h"
+#include <iostream>
 
 
 Negative::Negative(const FilterArgs& args) {

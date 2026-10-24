@@ -1,4 +1,5 @@
 #include "parse.h"
+#include <iostream>
 
 
 InputArgs parse(int argc, char** argv) {
@@ -18,18 +19,15 @@ InputArgs parse(int argc, char** argv) {
         if (argv[i] == "-") {
             throw "Filter name cannot be empty";
         }
+        // filter name
         if (argv[i][0] == '-') {
+            args.filter_args.emplace_back(((std::string)argv[i]).substr(1), FilterArgs{});
+        }else{
             // argument
-            if ('0' <= argv[i][1] && argv[i][1] <= '9') {
-                if (args.filter_args.empty()) {
-                    throw "need to specify the filter name first";
-                }
-                args.filter_args.back().second.push_back(argv[i]);
+            if (args.filter_args.empty()) {
+                throw "need to specify the filter name first";
             }
-            // filter name
-            else {
-                args.filter_args.emplace_back(((std::string)argv[i]).substr(1), FilterArgs{});
-            }
+            args.filter_args.back().second.push_back(argv[i]);
         }
     }
     return args;
